@@ -1,2 +1,2 @@
-# reidxtreme
-reidxtreme competitive programming 
+# ReidXtreme
+ReidXtreme Competitive Programming 
