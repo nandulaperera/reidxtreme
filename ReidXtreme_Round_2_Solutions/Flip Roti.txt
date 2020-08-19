@@ -1,0 +1,7 @@
+This Question is based on 
+https://codingcompetitions.withgoogle.com/codejam/round/00000000002017f7/0000000000201847
+
+answer is
+https://github.com/salvois/codejam/blob/master/src/codejam2017/qualification/OversizedPancakeFlipper.java
+
+
