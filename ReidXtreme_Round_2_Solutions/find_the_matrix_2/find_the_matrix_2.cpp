@@ -49,13 +49,7 @@ int main(){
 			finalMatrix[i][j] = min;
 		}
 	}
-	for(int i = 0; i < m; i++){
-		for(int j = 0; j < n; j++){
-			cout<<matrix[i][j]<<" ";
-		}
-		cout<<endl;
-	}
-	cout<<endl;
+	
 	for(int i = 0; i < m; i++){
 		for(int j = 0; j < n; j++){
 			cout<<finalMatrix[i][j]<<" ";

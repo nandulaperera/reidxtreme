@@ -1,30 +1,29 @@
-// CPP program to implement AB Trip Planners
-// problem using naive approach.
-// greedy solution or dynamic solution gives better results 
-#include <bits/stdc++.h> 
-#include <vector>
+// CPP program to implement traveling salesman 
+// problem using naive approach. 
+#include <bits/stdc++.h>
+
 using namespace std; 
+
   
 // driver program to test above function 
 int main() { 
+    // matrix representation of graph
     
+    int city;
+    int distance;
+    int cost_per_km = 1;
+    cin>>city;
+    cin>>cost_per_km;
+    int graph[city][city];
+    for(int i =0;i<city;i++){
+        for(int j =0;j<city;j++){
+            cin>>distance;
+            graph[i][j] = distance;
+        }
+    }
+    int s = 0; 
     
-	int city,distance,cost_per_km = 1;//init value
-	int graph[city][city];
-	
-	cin>>city;
-	cin>>cost_per_km;
-	
-	
-	//input values
-	for(int i =0;i<city;i++){
-		for(int j =0;j<city;j++){
-			cin>>distance;
-			graph[i][j] = distance;
-		}
-	}
-	int s = 0; 
-    // start travelling
+    ////////////////
     // store all vertex apart from source vertex 
     vector<int> vertex; 
     for (int i = 0; i < city; i++) 
@@ -51,7 +50,7 @@ int main() {
          
     } while (next_permutation(vertex.begin(), vertex.end())); 
   
-	
+    /////////////
     cout << min_path*cost_per_km << endl; 
     return 0; 
-} 
+}

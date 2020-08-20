@@ -5,8 +5,7 @@ using namespace std;
  
 int main(){
  
-    int i,j,k;
-    int x,y,z;
+    int i,j;
     int n1,n2;
     int result1,result2,result;
  
@@ -66,3 +65,4 @@ int main(){
  
     return 0;
 }
+
